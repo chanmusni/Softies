@@ -7,7 +7,7 @@ export default function Profile({navigation}) {
             <View style={styles.headerContainer}>
                 <AntDesign name="left" size={24} color="black" />
                 <Image style={{ width: 24, height: 24 }} 
-                source={require('./assets/baseline-search-24px.svg')} />
+                source={require('../assets/baseline-search-24px.svg')} />
             </View>
             <View stype={styles.topContainer}>
                 <Text style={styles.headerText}>My Profile </Text>
@@ -46,7 +46,7 @@ export default function Profile({navigation}) {
 
                 <Button 
                     title = 'Home'
-                    onPress={() => navigation.navigate('Home Page')}
+                    onPress={() => navigation.navigate('Homepage')}
                 />
         </View>
     )
