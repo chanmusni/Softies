@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
-import { StyleSheet, ScrollView, View, Text, StatusBar, Animated, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, ScrollView, View, Text, StatusBar, Animated, Image, TouchableOpacity, Button} from 'react-native';
 import { useFonts } from 'expo-font';
 import { ImageHeaderScrollView, TriggeringView } from 'react-native-image-header-scroll-view';
 import { LinearGradient } from 'react-native-svg';
 
 const BANNER_HEIGHT = 400;
 
-const Homepage = () => {
+const Homepage = ({navigation}) => {
     const scrollA = useRef(new Animated.Value(0)).current;
     const homebannerIMG = require('../assets/homebanner.png');
     const sampleIMG1 = require('../assets/sampleIMG1.svg');
@@ -164,6 +164,10 @@ const Homepage = () => {
                             />
 
                         </TouchableOpacity>
+                        <Button 
+                    title = 'Profile'
+                    onPress={() => navigation.navigate('Profile Page')}
+                />
                     </View>
 
                     

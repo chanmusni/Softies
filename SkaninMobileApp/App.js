@@ -12,6 +12,7 @@ import Landing from './components/Landing';
 import Classification from './components/Classification';
 import History from './components/History';
 import Summary from './components/Summary';
+import Profile from './components/Profile';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -29,6 +30,7 @@ export default function App() {
         <Screen name="Classification Page" component={Classification} />
         <Screen name="History Page" component={History} />
         <Screen name="Summary Page" component={Summary} />
+        <Screen name="Profile Page" component={Profile} />
       </Navigator>
     </NavigationContainer>
   );
