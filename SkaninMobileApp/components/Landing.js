@@ -54,13 +54,13 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     appTitle: {
-      fontSize: '42px',
-      marginTop: '1vh',
+      fontSize: 18,
+      marginTop: '1%',
       fontFamily: 'Ultra-Regular',
       color: 'green'
     },
     appMiniTitle: {
-        fontSize: '18px',
+        fontSize: 18,
       
       fontFamily: 'Montserrat-Regular',
       color: 'green'
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     },  
     continueText: {
         fontFamily: 'mosterratt-medium',
-        fontSize: '13px',
+        fontSize: 13,
         color: '#222222',
     },
     touchable: {
