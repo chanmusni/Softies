@@ -15,7 +15,7 @@ export default function Profile({navigation}) {
                 <Text style={styles.emailText}>matildabrown@mail.com</Text>
             </View>
 
-            <ProfileContainer itemText={"My scans"} subitemText={"Already have 12 scans"}></ProfileContainer>
+            <ProfileContainer itemText={"My scans"} color={'red'} subitemText={"Already have 12 scans"}></ProfileContainer>
             <ProfileContainer itemText={"Full Name"} subitemText={"Alicia Batumbakal"}></ProfileContainer>
             <ProfileContainer itemText={"Address"} subitemText={"Mindoro"}></ProfileContainer>
             <ProfileContainer itemText={"Contact Number"} subitemText={"09876543211"}></ProfileContainer>

@@ -1,11 +1,11 @@
 import { StyleSheet, View, Image, Text, TouchableOpacity, Button } from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; 
 
-export default function ProfileContainer ({itemText, subitemText}) {
+export default function ProfileContainer ({itemText, subitemText, color}) {
     return (
     <View stype={styles.itemContainer}>
         <View>
-            <Text style={styles.itemText}>{itemText}</Text>
+            <Text style={[styles.itemText, {color:color}]}>{itemText}</Text>
             <Text style={styles.subitemText}>{subitemText}</Text>
         </View>
         <AntDesign name="right" size={24} color="gray" />
