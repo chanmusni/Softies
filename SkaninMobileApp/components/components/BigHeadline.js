@@ -1,5 +1,6 @@
 import { StyleSheet, View, Image, Text, TouchableOpacity, Button } from 'react-native'; 
-import { Feather } from '@expo/vector-icons'; 
+// import { Ionicons } from '@expo/vector-icons';
+// import { AntDesign } from '@expo/vector-icons'; 
 import { useFonts } from 'expo-font';
 
 export default function BigHeadline ({Headline}) {
@@ -9,9 +10,11 @@ export default function BigHeadline ({Headline}) {
     return (
         <View style={styles.topContainer}>
             <View style={styles.headerContainer}>
-                <Feather name="chevron-left" size={24} color="black" />
+                <Image source={require(`../../assets/icon.svg`)}
+                    style={{width:24, height:24,}} />
             </View>
             <Text style={[styles.headerText,{fontStyle:'Monsteratt'}]}>{Headline}</Text>
+            
         </View>
     )
 }
@@ -20,36 +23,26 @@ export default function BigHeadline ({Headline}) {
 
 const styles = StyleSheet.create({
     headerContainer: {
-        // display: 'flex',
-        // flex:0,
-        flexDirection:'row',
         margin: 0,
         width: '100%',
-        // height: '44px',
-        // paddingTop: '8px',
-        // paddingBottom: '4px',
-        // paddingLeft: '4px',
-        // paddingRight: '8px',
-        // alignItems: 'flex-end',
         padding: 0,
         justifyContent: 'space-between',
+        paddingLeft:'4%'
     },
     topContainer: {
         margin: 0,
-        padding:0,
+        paddingTop:'6%'
     },
     headerText:{
         // flex:1,
         textAlign: 'left',
-        color: '#222222',
-        fontSize: '34px',
+        color: '#000',
+        fontSize: 30,
         fontStyle: 'normal',
         fontWeight: '700',
         lineHeight: 'normal',
         padding: 0,
         margin:0,
-        // paddingTop: '0px',
-        // paddingLeft: '8px',
-        // paddingBottom: '16px',
+        paddingLeft:'5%',
     },
 })
